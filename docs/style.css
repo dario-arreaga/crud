@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primar-00: #7d5600;
+  --color-primary-800: #9c6b00;
+  --color-primary-700: #bb8000;
+  --color-primary-600: #da9600;
+  --color-primary-500: #f9ab00;
+  --color-primary-400: #ffb71b;
+  --color-primary-300: #ffc23b;
+  --color-primary-200: #ffcc5c;
+  --color-primary-100: #ffd67d;
+  --color-accent-green-900: #155a3a;
+  --color-accent-green-800: #1a7149;
+  --color-accent-green-700: #1f8757;
+  --color-accent-green-600: #249e66;
+  --color-accent-green-500: #29b474;
+  --color-accent-green-400: #31d087;
+  --color-accent-green-300: #4ed798;
+  --color-accent-green-200: #6cdda9;
+  --color-accent-green-100: #89e4ba;
+  --color-accent-red-900: #901111;
+  --color-accent-red-800: #b41515;
+  --color-accent-red-700: #d81a1a;
+  --color-accent-red-600: #e73333;
+  --color-accent-red-500: #eb5757;
+  --color-accent-red-400: #ee6c6c;
+  --color-accent-red-300: #f08181;
+  --color-accent-red-200: #f39696;
+  --color-accent-red-100: #f5abab;
+  --color-neutral-black-900: #111315;
+  --color-neutral-black-800: #15181a;
+  --color-neutral-black-700: #1a1d20;
+  --color-neutral-black-600: #1e2125;
+  --color-neutral-black-500: #22262a;
+  --color-neutral-black-400: #3a4148;
+  --color-neutral-black-300: #535c66;
+  --color-neutral-black-200: #6b7784;
+  --color-neutral-black-100: #87939e;
+  --color-neutral-white-900: #817474;
+  --color-neutral-white-800: #9f9494;
+  --color-neutral-white-700: #bcb4b4;
+  --color-neutral-white-600: #d9d5d5;
+  --color-neutral-white-500: #f5f4f4;
+  --color-neutral-white-400: #f7f6f6;
+  --color-neutral-white-300: #f8f7f7;
+  --color-neutral-white-200: #f9f9f9;
+  --color-neutral-white-100: #fafafa;
+
+  --title: 32px;
+  --normal: 16px;
+  --small: 14px;
+}
+
+.o-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-gap: 1em;
+  padding: 1em;
+}
+.o-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-gap: 1em;
+}
+
+.o-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-gap: 1em;
+}
+
+.form__row {
+  display: flex;
+  grid-gap: 1em;
+  flex-flow: row-reverse;
+  align-items: center;
+  padding: 1em;
+  justify-content: center;
+  background-color: var(--color-neutral-black-700);
+  border-radius: 6px;
+}
+
+.form__container-input {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 0.5em;
+}
+.form__input {
+  border: none;
+  border-bottom: 1px var(--color-neutral-black-300) solid;
+  background-color: transparent !important;
+  outline: none;
+  padding-bottom: 0.125em;
+}
+
+.o-font-title {
+  color: var(--color-neutral-white-500);
+  font-size: var(--title);
+}
+
+.o-font-normal {
+  color: var(--color-neutral-white-600);
+  font-size: var(--normal);
+}
+.o-font-small {
+  color: var(--color-neutral-white-900);
+  font-size: var(--small);
+}
+
+.o-stroke-green {
+  border: 1px var(--color-accent-green-500) solid;
+}
+
+.o-stroke-orange {
+  border: 1px var(--color-primary-500) solid;
+}
+
+.o-stroke-red {
+  border: 1px var(--color-accent-red-500) solid;
+}
+
+.o-stroke-black {
+  border: 1px var(--color-neutral-black-300) solid;
+}
+
+.form__submit {
+  cursor: pointer;
+}
+
+.container-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5em;
+}
+
+.o-register-wrapper {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.o-title-user {
+  padding: 1em 0;
+  text-align: center;
+}
+
+.o-title-register {
+}
+
+.o-text-black {
+  color: var(--color-neutral-black-300);
+}
+
+.o-text-white {
+  color: var(--color-neutral-white-600);
+}
+
+body {
+  width: fit-content;
+  background-color: var(--color-neutral-black-900);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
+}
