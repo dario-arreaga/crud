@@ -81,6 +81,7 @@
   flex-direction: row;
   justify-content: center;
   grid-gap: 1em;
+    flex-wrap: wrap;
 }
 
 .form__row {
